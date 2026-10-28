@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "ChangelogToken",
+    "name": "Changelog.md",
+    "symbol": "CMD",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x206f5dbf4f135c6183b5a5b99327fa0be34cb4d9"
+  },
+  "notes": "ChangelogToken is a fixed-supply ERC-20 named Changelog.md (CMD) with 18 decimals. Its no-argument constructor mints all 1,000,000,000 tokens once to msg.sender, the factory at launch. It has no privileged roles, later minting, burning, or transfer fees. There are no application contracts or initialization calls. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
